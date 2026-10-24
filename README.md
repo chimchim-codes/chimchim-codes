@@ -1,201 +1,190 @@
-<<<<<<< HEAD
 <div align="center">
 
-<!-- Minimal Editorial Banner -->
-<img src="assets/profile-banner.svg" alt="Sharon Elsa Sam — Artificial Intelligence & Data Science Profile Banner" width="100%">
+<!-- Wide Monochrome Banner with Disco Ball & Collage Artwork -->
+<img src="assets/banner.png" alt="Sharon Elsa Sam — Dark Editorial Portfolio Banner" width="100%">
 
 <br><br>
 
-<!-- Social / Identity Badges -->
-<a href="https://github.com/chimchim-codes">
-  <img src="https://img.shields.io/badge/GitHub-chimchim--codes-4A3525?style=flat-square&logo=github&logoColor=F6D06D&labelColor=222326" alt="GitHub Profile">
-</a>
-&nbsp;
-<a href="https://www.linkedin.com/in/sharon-elsa-sam">
-  <img src="https://img.shields.io/badge/LinkedIn-sharon--elsa--sam-4A3525?style=flat-square&logo=linkedin&logoColor=F6D06D&labelColor=222326" alt="LinkedIn Profile">
-</a>
-&nbsp;
-<img src="https://img.shields.io/badge/Focus-AI%20Engineering%20%26%20Data%20Science-F6D06D?style=flat-square&logoColor=222326&labelColor=4A3525&color=F6D06D" alt="Focus: AI Engineering & Data Science">
+<!-- Central Disco Ball Artwork -->
+<img src="assets/disco-ball-transparent.png" alt="Monochrome Disco Ball Artwork" width="130">
 
 <br><br>
 
-# Sharon Elsa Sam
+# SHARON ELSA SAM
 
-**Artificial Intelligence & Data Science Student · Aspiring AI Engineer**  
-*Exploring how intelligent systems work and engineering reliable, human-centered software.*
+**AI &amp; Data Science Student &nbsp;✦&nbsp; Aspiring AI Engineer**  
+*Exploring the mechanics of intelligent systems &amp; engineering practical, reliable software.*
+
+<br>
+
+<p align="center">
+  <img src="https://img.shields.io/badge/Status-Undergraduate%20%40%20AI%20%26%20Data%20Science-0D1117?style=flat-square&logoColor=F0F6FC&labelColor=161B22" alt="Status">
+  &nbsp;
+  <img src="https://img.shields.io/badge/Aesthetic-Monochrome%20Editorial-0D1117?style=flat-square&logoColor=F0F6FC&labelColor=161B22" alt="Aesthetic">
+  &nbsp;
+  <img src="https://img.shields.io/badge/Focus-Machine%20Learning%20%26%20Backend-0D1117?style=flat-square&logoColor=F0F6FC&labelColor=161B22" alt="Focus">
+</p>
 
 </div>
 
 ---
 
-### 📖 About Me
+### ✦ About Me
 
-I am an undergraduate student in **Artificial Intelligence and Data Science** focused on bridging mathematical models and production-ready software. Rather than treating artificial intelligence as a collection of black-box libraries, I am driven to understand the algorithmic foundations underneath—from linear algebra and optimization to how real-world backend services process and serve predictions.
+I am an **Artificial Intelligence and Data Science** undergraduate student fascinated by how intelligent systems operate beneath high-level abstractions. I believe strong AI engineering is rooted in rigorous mathematical fundamentals—linear algebra, calculus, and probability—paired with clean, dependable backend architecture.
 
-My goal is to grow into an **AI Engineer** who can build, deploy, and maintain dependable applications that solve genuine problems.
+My focus is on transforming theoretical concepts into functional, real-world tools while maintaining clean code practices, clear documentation, and steady learning habits.
 
-#### 💡 What I'm Curious About
+#### Core Areas of Curiosity
 
-- **Machine Learning & Deep Learning** — Studying loss surfaces, gradient mechanics, representation learning, and evaluation metrics that reflect real-world performance.
-- **AI Engineering & LLM Applications** — Investigating how large language models interact with structured data, external tooling, APIs, and retrieval pipelines.
-- **Backend Systems & APIs** — Designing clean application programming interfaces, predictable data schemas, and resilient service architectures.
-- **Data Science & Forensics** — Finding authentic signal within noisy data, timeline puzzles, and structured records.
-- **Intelligent Applications & Practical Problem-Solving** — Translating theoretical concepts into accessible, functional software that people can rely on.
-
----
-
-### 🛠️ Tech Stack & Tooling
-
-Technologies are categorized by domain. To provide an honest representation of my technical journey, tools I actively use in code are separated from concepts I am actively learning.
-
-#### 💻 Programming Languages
-| Category | Technologies |
-| :--- | :--- |
-| **Actively Using** | ![Python](https://img.shields.io/badge/Python-4A3525?style=flat-square&logo=python&logoColor=F6D06D&labelColor=222326) ![Java](https://img.shields.io/badge/Java-4A3525?style=flat-square&logo=openjdk&logoColor=F6D06D&labelColor=222326) |
-| **Currently Learning** | ![TypeScript](https://img.shields.io/badge/Learning-TypeScript-73533F?style=flat-square&logo=typescript&logoColor=FAF7F2&labelColor=222326) ![C](https://img.shields.io/badge/Learning-C-73533F?style=flat-square&logo=c&logoColor=FAF7F2&labelColor=222326) |
-
-#### 🧠 AI, Machine Learning & Data Science
-| Category | Technologies |
-| :--- | :--- |
-| **Actively Using** | ![NumPy](https://img.shields.io/badge/NumPy-4A3525?style=flat-square&logo=numpy&logoColor=F6D06D&labelColor=222326) ![Pandas](https://img.shields.io/badge/Pandas-4A3525?style=flat-square&logo=pandas&logoColor=F6D06D&labelColor=222326) ![Matplotlib](https://img.shields.io/badge/Matplotlib-4A3525?style=flat-square&logo=python&logoColor=F6D06D&labelColor=222326) |
-| **Currently Learning** | ![Scikit-Learn](https://img.shields.io/badge/Learning-Scikit--Learn-73533F?style=flat-square&logo=scikitlearn&logoColor=FAF7F2&labelColor=222326) ![PyTorch](https://img.shields.io/badge/Learning-PyTorch-73533F?style=flat-square&logo=pytorch&logoColor=FAF7F2&labelColor=222326) ![LLM Application Patterns](https://img.shields.io/badge/Learning-LLM%20Orchestration-73533F?style=flat-square&logo=openai&logoColor=FAF7F2&labelColor=222326) |
-
-#### ⚙️ Backend, Desktop & Data Management
-| Category | Technologies |
-| :--- | :--- |
-| **Actively Using** | ![CustomTkinter](https://img.shields.io/badge/CustomTkinter-GUI-4A3525?style=flat-square&logo=python&logoColor=F6D06D&labelColor=222326) ![Tkinter](https://img.shields.io/badge/Tkinter-Desktop-4A3525?style=flat-square&logo=python&logoColor=F6D06D&labelColor=222326) ![JSON Architecture](https://img.shields.io/badge/JSON-Data%20Store-4A3525?style=flat-square&logo=json&logoColor=F6D06D&labelColor=222326) |
-| **Currently Learning** | ![FastAPI](https://img.shields.io/badge/Learning-FastAPI-73533F?style=flat-square&logo=fastapi&logoColor=FAF7F2&labelColor=222326) ![REST APIs](https://img.shields.io/badge/Learning-REST%20APIs-73533F?style=flat-square&logo=fastapi&logoColor=FAF7F2&labelColor=222326) ![SQLite / SQL](https://img.shields.io/badge/Learning-SQLite%20%2F%20SQL-73533F?style=flat-square&logo=sqlite&logoColor=FAF7F2&labelColor=222326) |
-
-#### 🔧 Tools & Development Workflow
-| Category | Technologies |
-| :--- | :--- |
-| **Actively Using** | ![Git](https://img.shields.io/badge/Git-4A3525?style=flat-square&logo=git&logoColor=F6D06D&labelColor=222326) ![GitHub](https://img.shields.io/badge/GitHub-4A3525?style=flat-square&logo=github&logoColor=F6D06D&labelColor=222326) ![VS Code](https://img.shields.io/badge/VS%20Code-4A3525?style=flat-square&logo=visualstudiocode&logoColor=F6D06D&labelColor=222326) ![Pillow / PIL](https://img.shields.io/badge/Pillow-Image%20Processing-4A3525?style=flat-square&logo=python&logoColor=F6D06D&labelColor=222326) |
-| **Currently Learning** | ![Docker](https://img.shields.io/badge/Learning-Docker-73533F?style=flat-square&logo=docker&logoColor=FAF7F2&labelColor=222326) ![Linux CLI](https://img.shields.io/badge/Learning-Linux%20CLI-73533F?style=flat-square&logo=linux&logoColor=FAF7F2&labelColor=222326) ![Branching & PRs](https://img.shields.io/badge/Learning-Branching%20%26%20PRs-73533F?style=flat-square&logo=git&logoColor=FAF7F2&labelColor=222326) |
+- **Machine Learning & Deep Learning** — Understanding gradient mechanics, loss landscape optimization, and model evaluation beyond library abstractions.
+- **AI Engineering & LLM Applications** — Investigating how generative models integrate into reliable pipelines, structured APIs, and retrieval-augmented systems.
+- **Backend Systems & APIs** — Designing clean application interfaces, structured data models, and resilient server-side workflows.
+- **Data Science & Forensics** — Finding authentic signals within complex datasets, structured records, and timeline investigations.
+- **Creative Problem-Solving & Mini-Projects** — Writing modular code, building desktop interfaces, and learning through deliberate, iterative practice.
 
 ---
 
-### 🎯 Currently Learning
+### ✦ Connect
 
-These are my active growth goals. They represent areas where I am writing code, reading documentation, and building small iterations:
+<div align="center">
 
-- [ ] **Python & Engineering Fundamentals** — Exploring idiomatic patterns, object-oriented encapsulation, error handling, and clean code principles.
-- [ ] **Mathematical Machine Learning** — Working through vector spaces, matrix transformations, loss functions, and optimization mathematics from first principles.
-- [ ] **AI Engineering & LLM Workflows** — Studying retrieval-augmented generation (RAG), prompt architecture, structured JSON outputs, and embedding spaces.
-- [ ] **Backend Service Development** — Understanding HTTP methods, request validation, state management, and building clean RESTful interfaces.
-- [ ] **Collaborative Git & GitHub** — Moving beyond simple push/pull to feature branches, descriptive commit histories, pull requests, and merge strategies.
-- [ ] **Code Maintainability & Testing** — Adopting type hinting, descriptive docstrings, and basic unit testing for predictable software behavior.
+<a href="https://github.com/chimchim-codes">
+  <img src="https://img.shields.io/badge/GitHub-chimchim--codes-0D1117?style=for-the-badge&logo=github&logoColor=F0F6FC&labelColor=161B22" alt="GitHub Profile">
+</a>
+&nbsp;&nbsp;&nbsp;&nbsp;
+<a href="https://www.linkedin.com/in/sharon-elsa-sam">
+  <img src="https://img.shields.io/badge/LinkedIn-sharon--elsa--sam-0D1117?style=for-the-badge&logo=linkedin&logoColor=F0F6FC&labelColor=161B22" alt="LinkedIn Profile">
+</a>
+
+<br><br>
+
+<sub>Open to discussions on AI engineering, machine learning foundations, open-source projects, and collaborative development.</sub>
+
+</div>
 
 ---
 
-### 📂 Featured Projects
+### ✦ Tech Stack
 
-Each project listed below reflects real, verified code built during my learning journey. Mini-exercises and full applications are distinguished honestly.
+Organized by domain, reflecting tools verified in my repositories alongside concepts I am actively studying:
 
-#### 🔍 1. Detective Mystery & Digital Forensics: Ramji Rao Speaking
-> **A digital forensics case study and desktop investigation game.**
+#### 1. Programming Languages
+| Category | Technologies |
+| :--- | :--- |
+| **Actively Using** | ![Python](https://img.shields.io/badge/Python-0D1117?style=flat-square&logo=python&logoColor=F0F6FC&labelColor=161B22) ![Java](https://img.shields.io/badge/Java-0D1117?style=flat-square&logo=openjdk&logoColor=F0F6FC&labelColor=161B22) |
+| **Currently Learning** | ![TypeScript](https://img.shields.io/badge/Learning-TypeScript-161B22?style=flat-square&logo=typescript&logoColor=8B949E&labelColor=0D1117) ![C](https://img.shields.io/badge/Learning-C-161B22?style=flat-square&logo=c&logoColor=8B949E&labelColor=0D1117) |
+
+#### 2. AI, Machine Learning & Data Science
+| Category | Technologies |
+| :--- | :--- |
+| **Actively Using** | ![NumPy](https://img.shields.io/badge/NumPy-0D1117?style=flat-square&logo=numpy&logoColor=F0F6FC&labelColor=161B22) ![Pandas](https://img.shields.io/badge/Pandas-0D1117?style=flat-square&logo=pandas&logoColor=F0F6FC&labelColor=161B22) ![Matplotlib](https://img.shields.io/badge/Matplotlib-0D1117?style=flat-square&logo=python&logoColor=F0F6FC&labelColor=161B22) |
+| **Currently Learning** | ![Scikit-Learn](https://img.shields.io/badge/Learning-Scikit--Learn-161B22?style=flat-square&logo=scikitlearn&logoColor=8B949E&labelColor=0D1117) ![PyTorch](https://img.shields.io/badge/Learning-PyTorch-161B22?style=flat-square&logo=pytorch&logoColor=8B949E&labelColor=0D1117) ![LLM Application Patterns](https://img.shields.io/badge/Learning-LLM%20Pipelines-161B22?style=flat-square&logo=openai&logoColor=8B949E&labelColor=0D1117) |
+
+#### 3. Backend Development & Desktop
+| Category | Technologies |
+| :--- | :--- |
+| **Actively Using** | ![CustomTkinter](https://img.shields.io/badge/CustomTkinter-Desktop%20GUI-0D1117?style=flat-square&logo=python&logoColor=F0F6FC&labelColor=161B22) ![Tkinter](https://img.shields.io/badge/Tkinter-GUI-0D1117?style=flat-square&logo=python&logoColor=F0F6FC&labelColor=161B22) ![JSON Architecture](https://img.shields.io/badge/JSON-Data%20Store-0D1117?style=flat-square&logo=json&logoColor=F0F6FC&labelColor=161B22) |
+| **Currently Learning** | ![FastAPI](https://img.shields.io/badge/Learning-FastAPI-161B22?style=flat-square&logo=fastapi&logoColor=8B949E&labelColor=0D1117) ![REST APIs](https://img.shields.io/badge/Learning-REST%20APIs-161B22?style=flat-square&logo=fastapi&logoColor=8B949E&labelColor=0D1117) ![SQLite / SQL](https://img.shields.io/badge/Learning-SQLite%20%2F%20SQL-161B22?style=flat-square&logo=sqlite&logoColor=8B949E&labelColor=0D1117) |
+
+#### 4. Developer Tools & Workflow
+| Category | Technologies |
+| :--- | :--- |
+| **Actively Using** | ![Git](https://img.shields.io/badge/Git-0D1117?style=flat-square&logo=git&logoColor=F0F6FC&labelColor=161B22) ![GitHub](https://img.shields.io/badge/GitHub-0D1117?style=flat-square&logo=github&logoColor=F0F6FC&labelColor=161B22) ![VS Code](https://img.shields.io/badge/VS%20Code-0D1117?style=flat-square&logo=visualstudiocode&logoColor=F0F6FC&labelColor=161B22) ![Pillow / PIL](https://img.shields.io/badge/Pillow-Image%20Processing-0D1117?style=flat-square&logo=python&logoColor=F0F6FC&labelColor=161B22) |
+| **Currently Learning** | ![Docker](https://img.shields.io/badge/Learning-Docker-161B22?style=flat-square&logo=docker&logoColor=8B949E&labelColor=0D1117) ![Linux CLI](https://img.shields.io/badge/Learning-Linux%20CLI-161B22?style=flat-square&logo=linux&logoColor=8B949E&labelColor=0D1117) ![Feature Branching](https://img.shields.io/badge/Learning-Branching%20%26%20PRs-161B22?style=flat-square&logo=git&logoColor=8B949E&labelColor=0D1117) |
+
+---
+
+### ✦ Featured Projects
+
+Featured work built from scratch, highlighting verified source code and genuine learning milestones.
+
+#### 1. Detective Mystery & Digital Forensics: Ramji Rao Speaking
+> **A digital forensics case study and desktop investigation application.**
 
 - **Repository**: [chimchim-codes/RamjiRao-Speaking](https://github.com/chimchim-codes/RamjiRao-Speaking)  
-  *(Configured local repository: `RamjiRao` — see note below if repository is currently in staging/private mode)*
-- **Core Technologies**: `Python 3` · `CustomTkinter` · `Pillow (PIL)` · `JSON Manifest Engine` · `Dynamic File Recovery`
-- **What It Solves**: Built around an investigation scenario (*Nisha's Villa*), this application tests analytical and deductive reasoning. Instead of an automated solver, it puts players in the detective's chair—requiring them to inspect crime scenes on an interactive map, decrypt secured records, examine timeline discrepancies, and assemble evidence on a theory board before accusing a suspect.
-- **Implemented Technical Features**:
-  - **Dynamic Case Pack Discovery**: Reads locations, map markers, and evidence hierarchy dynamically from `case_manifest.json` without hardcoding content into UI views.
-  - **Forensic Recovery Engine**: Detects corrupted/tampered evidence files and guides the user through digital forensic restoration routines.
-  - **In-Memory Hint Decryption**: Protects clues using encrypted payloads (`hints.dat`), decrypting hints into memory only when requested.
-  - **Case Save System**: Serializes investigator notebook entries, unlocked evidence sets, and theory boards into structured JSON save files (`savegames/`).
-- **What I Learned**: Modular state separation (`save_manager.py`, `hint_manager.py`, `models.py`), desktop UI architecture with CustomTkinter, and handling complex event-driven game states.
+  *(Local repository: `RamjiRao` — see note below if currently in local staging)*
+- **Technologies**: `Python 3` · `CustomTkinter` · `Pillow (PIL)` · `JSON Manifest Engine` · `Dynamic File Recovery`
+- **What It Does**: An interactive forensic mystery environment (*Nisha's Villa*) where players examine location nodes, investigate physical and digital clues, reconstruct timeline inconsistencies, and decrypt protected files before making an accusation.
+- **Implemented Architecture**:
+  - **Dynamic Case Pack Discovery**: Maps, marker coordinates, and unlock rules are loaded dynamically from `case_manifest.json` without hardcoded UI logic.
+  - **Forensic Recovery Engine**: Detects corrupted or protected evidence files and guides investigators through restoration sequences.
+  - **Encrypted Hint Engine**: Protects solutions within an encrypted base64 payload (`hints.dat`), decrypting clues in memory only when requested.
+  - **Persistent State Tracking**: Records investigator notes, theories, and recovered files into structured JSON save files (`savegames/`).
+- **What I Learned**: Desktop UI event architecture with CustomTkinter, modular state separation (`models.py`, `save_manager.py`), and managing dependency graphs for evidence unlocks.
 
 ---
 
-#### 🐍 2. Python Mini Projects: Logic & Fundamentals
-> **Small, focused applications exploring core Python concepts and GUI programming.**
+#### 2. Python Mini Projects: Logic & Fundamentals
+> **Focused programs exploring foundational programming, GUI design, and data structures.**
 
 - **Repository**: [chimchim-codes/Basic-Python-Projects](https://github.com/chimchim-codes/Basic-Python-Projects)
 
-Rather than maintaining separate repositories for introductory exercises, these programs are organized together within a single repository to track progressive learning:
+All three scripts are maintained in a single repository to track progressive Python fundamentals:
 
-##### 🕹️ A. Rock, Paper, Scissors
+##### A. Rock, Paper, Scissors
 - **Source File**: [`RockPaperScissors.py`](https://github.com/chimchim-codes/Basic-Python-Projects/blob/main/RockPaperScissors.py)
-- **Key Concepts Practiced**: User input validation, `random.choice()` selection, conditional logic branching (`if` / `elif` / `else`), round-based iteration loops, and persistent session score tracking.
-- **Next Improvement**: Add case-insensitive input parsing (`.upper()`), defensive error handling for non-numeric round counts, and an optional probability-based computer opponent.
+- **Concepts Implemented**: Round-based iteration loops, `random.choice()` selection, input evaluation, conditional win/loss logic branching, and dynamic round score calculation.
+- **Next Planned Iteration**: Add input sanitization (`.strip()`, `.upper()`), defensive validation for non-integer inputs, and an optional probability-based computer opponent.
 
-##### 🔐 B. Password Generator
+##### B. Password Generator
 - **Source File**: [`passwrd_gen.py`](https://github.com/chimchim-codes/Basic-Python-Projects/blob/main/passwrd_gen.py)
-- **How It Works**: Accepts user-defined character lengths and samples characters uniformly from alphanumeric strings and punctuation sets via `random.sample()`.
-- **Security Context**: *Transparent note* — Uses Python's standard `random` pseudo-random generator (Mersenne Twister), which is appropriate for basic applications but not cryptographically secure.
-- **Next Improvement**: Refactor to Python’s built-in `secrets` module (`secrets.choice`) for cryptographically secure entropy, and add configuration flags allowing users to choose character types (uppercase, lowercase, symbols, digits).
+- **How It Works**: Accepts user-specified lengths and uniformly samples characters from mixed alphanumeric and special symbol sets using `random.sample()`.
+- **Security Transparency**: *Note* — Built using Python’s standard `random` module (Mersenne Twister), suitable for basic applications but not cryptographically secure.
+- **Next Planned Iteration**: Upgrade to Python's `secrets` module (`secrets.choice`) for cryptographic randomness, and add toggles for user-selectable character classes.
 
-##### 📝 C. Desktop To-Do List
+##### C. Desktop To-Do List Application
 - **Source File**: [`to_dolist.py`](https://github.com/chimchim-codes/Basic-Python-Projects/blob/main/to_dolist.py)
-- **Implemented Features**: Desktop interface built with `customtkinter` and `tkinter.Listbox`. Supports text entry insertion, dynamic list updating, and deletion of selected task items.
-- **What I Learned**: GUI component layout (`.grid()`), event handler callbacks (`add_item`, `delete_item`), and cross-library widget coordination.
-- **Next Improvement**: Add local data persistence (saving tasks to a local JSON file or SQLite database so tasks persist after closing) and implement a status toggle for marking tasks completed.
+- **Implemented Features**: Desktop graphical interface using `customtkinter` and `tkinter.Listbox`. Allows users to add task entries and delete selected items from the listbox.
+- **What I Learned**: Component placement with `.grid()`, button callback handlers, and coordinating CustomTkinter inputs with native Tkinter list widgets.
+- **Next Planned Iteration**: Add local data persistence (saving tasks to a JSON file or SQLite database so items persist across application restarts) and completion check toggles.
 
 ---
 
-#### 🌐 3. Interactive Web Portfolio *(Additional Verified Project)*
-> **A scrapbook-inspired personal portfolio exploring motion and responsive web design.**
+#### 3. Interactive Web Portfolio *(Additional Verified Project)*
+> **A scrapbook-inspired personal portfolio exploring layout and animation physics.**
 
 - **Repository**: [chimchim-codes/Portfolio](https://github.com/chimchim-codes/Portfolio) · **Live Site**: [portfolio-chimchim-codes.vercel.app](https://portfolio-chimchim-codes.vercel.app)
 - **Technologies**: `Next.js` · `TypeScript` · `Tailwind CSS` · `Framer Motion`
-- **Description**: Designed with tactile, scrapbook-inspired visuals to explore modern frontend patterns, component lifecycle, and web animation physics.
+- **Description**: Explores tactile scrapbook aesthetics, responsive frontend components, and fluid UI animation physics.
 
 ---
 
-### 📊 GitHub Activity & Overview
+### ✦ Currently Exploring
+
+Active technical learning goals and weekly experiments:
+
+- [ ] **Python & Engineering Fundamentals** — Exploring idiomatic patterns, object-oriented encapsulation, and error handling.
+- [ ] **Mathematical Machine Learning** — Working through vector spaces, matrix transformations, loss functions, and optimization mathematics.
+- [ ] **AI Engineering & LLM Pipelines** — Studying retrieval-augmented generation (RAG), prompt architecture, structured outputs, and embedding models.
+- [ ] **Backend Service Development** — Understanding HTTP methods, request validation, state management, and building clean RESTful interfaces.
+- [ ] **Git & GitHub Workflows** — Moving beyond simple commits to feature branches, descriptive commit histories, pull requests, and merge strategies.
+- [ ] **Code Maintainability & Testing** — Adopting type hints, descriptive docstrings, and unit testing for predictable software behavior.
+
+---
+
+### ✦ GitHub Activity & Stats
 
 <div align="center">
 
-<img src="https://github-readme-stats.vercel.app/api?username=chimchim-codes&show_icons=true&bg_color=FAF7F2&title_color=4A3525&text_color=2B231D&icon_color=D4A72C&border_color=E5DCCB&border_radius=12&hide_border=false" alt="Sharon's GitHub Profile Statistics" width="48%">
+<img src="https://github-readme-stats.vercel.app/api?username=chimchim-codes&show_icons=true&theme=dark&bg_color=0D1117&title_color=F0F6FC&text_color=8B949E&icon_color=C9D1D9&border_color=30363D&border_radius=8&hide_border=false" alt="Sharon's GitHub Profile Statistics" width="48%">
 &nbsp;
-<img src="https://github-readme-stats.vercel.app/api/top-langs/?username=chimchim-codes&layout=compact&bg_color=FAF7F2&title_color=4A3525&text_color=2B231D&border_color=E5DCCB&border_radius=12&hide_border=false" alt="Top Languages Used by Sharon Elsa Sam" width="48%">
+<img src="https://github-readme-stats.vercel.app/api/top-langs/?username=chimchim-codes&layout=compact&theme=dark&bg_color=0D1117&title_color=F0F6FC&text_color=8B949E&border_color=30363D&border_radius=8&hide_border=false" alt="Top Languages Used by Sharon Elsa Sam" width="48%">
+
+<br><br>
+
+<img src="https://github-readme-streak-stats.herokuapp.com/?user=chimchim-codes&theme=dark&background=0D1117&border=30363D&stroke=30363D&ring=C9D1D9&fire=E1E4E8&currStreakNum=F0F6FC&sideNums=8B949E&currStreakLabel=C9D1D9&sideLabels=8B949E&dates=6E7681" alt="Sharon's GitHub Contribution Streak" width="97%">
 
 <br>
 
-<sub>*Note: GitHub statistics reflect public contributions and repository languages. They represent a visual log of active coding iterations rather than an absolute measure of software engineering depth.*</sub>
+<sub>*Note: GitHub statistics reflect public contributions and repository languages. They represent a visual log of active coding iterations rather than an absolute measure of engineering depth.*</sub>
 
 </div>
 
 ---
-
-### ⚡ This Week's Focus
-
-- [x] Designing a minimal, editorial GitHub profile README with custom banner assets.
-- [ ] Refactoring `Basic-Python-Projects` with input validation, docstrings, and `secrets` module integration.
-- [ ] Practicing feature branches, pull requests, and semantic commit conventions on GitHub.
-- [ ] Studying mathematical vectors and matrices to prepare for machine learning model development.
-- [ ] Maintaining a consistent, meaningful seven-day contribution streak on GitHub.
-
----
-
-### 📬 Connect With Me
 
 <div align="center">
 
-[![GitHub](https://img.shields.io/badge/GitHub-chimchim--codes-4A3525?style=for-the-badge&logo=github&logoColor=F6D06D&labelColor=222326)](https://github.com/chimchim-codes)
-&nbsp;&nbsp;&nbsp;&nbsp;
-[![LinkedIn](https://img.shields.io/badge/LinkedIn-sharon--elsa--sam-4A3525?style=for-the-badge&logo=linkedin&logoColor=F6D06D&labelColor=222326)](https://www.linkedin.com/in/sharon-elsa-sam)
-
-<br>
-
-*Open to conversations on AI engineering, machine learning foundations, open-source projects, and collaborative learning.*
+<sub>Designed with a dark monochrome aesthetic &bull; Sharon Elsa Sam &bull; 2026</sub>
 
 </div>
-=======
-## Hi there 👋
-
-<!--
-**chimchim-codes/chimchim-codes** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
-
-Here are some ideas to get you started:
-
-- 🔭 I’m currently working on ...
-- 🌱 I’m currently learning ...
-- 👯 I’m looking to collaborate on ...
-- 🤔 I’m looking for help with ...
-- 💬 Ask me about ...
-- 📫 How to reach me: ...
-- 😄 Pronouns: ...
-- ⚡ Fun fact: ...
--->
->>>>>>> 82fafd8e532779d65fa34811817477163c10f62c
