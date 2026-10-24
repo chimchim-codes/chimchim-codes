@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 <div align="center">
 
 <!-- Minimal Editorial Banner -->
@@ -180,3 +181,21 @@ Rather than maintaining separate repositories for introductory exercises, these 
 *Open to conversations on AI engineering, machine learning foundations, open-source projects, and collaborative learning.*
 
 </div>
+=======
+## Hi there 👋
+
+<!--
+**chimchim-codes/chimchim-codes** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
+
+Here are some ideas to get you started:
+
+- 🔭 I’m currently working on ...
+- 🌱 I’m currently learning ...
+- 👯 I’m looking to collaborate on ...
+- 🤔 I’m looking for help with ...
+- 💬 Ask me about ...
+- 📫 How to reach me: ...
+- 😄 Pronouns: ...
+- ⚡ Fun fact: ...
+-->
+>>>>>>> 82fafd8e532779d65fa34811817477163c10f62c
