@@ -1,0 +1,750 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>GitHub Profile Preview — Sharon Elsa Sam (@chimchim-codes)</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,600;1,6..72,400&family=Plus+Jakarta+Sans:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --bg-canvas: #F5EFE6;
+      --bg-card: #FAF7F2;
+      --bg-code: #F0E8DC;
+      --border-subtle: #E6DDCF;
+      --border-accent: #D4C5B3;
+      --text-main: #242220;
+      --text-muted: #696058;
+      --text-light: #948A80;
+      --accent-brown: #4A3525;
+      --accent-yellow: #E5B842;
+      --accent-amber: #D4A72C;
+      --accent-warm: #73533F;
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      background-color: var(--bg-canvas);
+      color: var(--text-main);
+      font-family: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+      line-height: 1.65;
+      padding: 40px 20px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    .preview-header-bar {
+      max-width: 940px;
+      width: 100%;
+      background: #FFFFFF;
+      border: 1px solid var(--border-subtle);
+      border-radius: 12px;
+      padding: 14px 20px;
+      margin-bottom: 24px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      box-shadow: 0 4px 20px rgba(74, 53, 37, 0.04);
+    }
+
+    .preview-tag {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      font-size: 13px;
+      font-weight: 600;
+      color: var(--accent-brown);
+    }
+
+    .preview-tag span.badge {
+      background: #FBF3DE;
+      color: #7A5C22;
+      border: 1px solid #EBD69B;
+      padding: 3px 10px;
+      border-radius: 20px;
+      font-size: 11px;
+      letter-spacing: 0.5px;
+      text-transform: uppercase;
+    }
+
+    .preview-actions {
+      font-size: 13px;
+      color: var(--text-muted);
+    }
+
+    .container {
+      max-width: 940px;
+      width: 100%;
+      background-color: var(--bg-card);
+      border: 1px solid var(--border-subtle);
+      border-radius: 16px;
+      padding: 48px;
+      box-shadow: 0 10px 40px rgba(74, 53, 37, 0.05);
+    }
+
+    .banner-wrapper {
+      width: 100%;
+      border-radius: 14px;
+      overflow: hidden;
+      margin-bottom: 24px;
+      box-shadow: 0 4px 16px rgba(0,0,0,0.04);
+    }
+
+    .banner-wrapper img {
+      width: 100%;
+      height: auto;
+      display: block;
+    }
+
+    .hero-center {
+      text-align: center;
+      margin-bottom: 32px;
+    }
+
+    .badges-row {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 8px;
+      margin: 18px 0;
+    }
+
+    .badges-row img {
+      height: 24px;
+      border-radius: 4px;
+    }
+
+    h1.profile-name {
+      font-family: 'Newsreader', Georgia, serif;
+      font-size: 38px;
+      font-weight: 600;
+      color: var(--accent-brown);
+      margin-top: 14px;
+      margin-bottom: 6px;
+      letter-spacing: -0.5px;
+    }
+
+    .profile-subtitle {
+      font-size: 17px;
+      font-weight: 600;
+      color: var(--text-main);
+      margin-bottom: 6px;
+    }
+
+    .profile-tagline {
+      font-size: 15px;
+      color: var(--text-muted);
+      font-style: italic;
+    }
+
+    hr {
+      border: none;
+      height: 1px;
+      background: var(--border-subtle);
+      margin: 36px 0;
+    }
+
+    h3.section-heading {
+      font-family: 'Newsreader', Georgia, serif;
+      font-size: 24px;
+      font-weight: 600;
+      color: var(--accent-brown);
+      margin-bottom: 16px;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+
+    h4.sub-heading {
+      font-size: 16px;
+      font-weight: 700;
+      color: var(--accent-brown);
+      margin-top: 24px;
+      margin-bottom: 12px;
+      letter-spacing: 0.2px;
+    }
+
+    p {
+      color: var(--text-main);
+      font-size: 15px;
+      margin-bottom: 16px;
+    }
+
+    ul {
+      list-style-type: none;
+      padding-left: 0;
+      margin-bottom: 20px;
+    }
+
+    li {
+      position: relative;
+      padding-left: 24px;
+      margin-bottom: 10px;
+      font-size: 14.5px;
+      color: var(--text-main);
+    }
+
+    li::before {
+      content: "•";
+      position: absolute;
+      left: 6px;
+      top: -1px;
+      color: var(--accent-amber);
+      font-size: 20px;
+    }
+
+    li strong {
+      color: var(--accent-brown);
+    }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin: 16px 0 28px 0;
+      font-size: 14px;
+      background: #FFFFFF;
+      border-radius: 10px;
+      overflow: hidden;
+      border: 1px solid var(--border-subtle);
+    }
+
+    th {
+      background: #F8F3EA;
+      color: var(--accent-brown);
+      text-align: left;
+      padding: 12px 18px;
+      font-weight: 700;
+      border-bottom: 1px solid var(--border-subtle);
+      font-size: 13px;
+      letter-spacing: 0.5px;
+    }
+
+    td {
+      padding: 12px 18px;
+      border-bottom: 1px solid #F2ECE3;
+      vertical-align: middle;
+    }
+
+    tr:last-child td {
+      border-bottom: none;
+    }
+
+    td strong {
+      color: var(--accent-brown);
+    }
+
+    td img {
+      vertical-align: middle;
+      margin-right: 6px;
+      margin-bottom: 4px;
+      height: 22px;
+    }
+
+    .project-card {
+      background: #FFFFFF;
+      border: 1px solid var(--border-subtle);
+      border-radius: 12px;
+      padding: 24px;
+      margin-bottom: 20px;
+      transition: all 0.2s ease;
+    }
+
+    .project-card:hover {
+      border-color: var(--border-accent);
+      box-shadow: 0 6px 20px rgba(74, 53, 37, 0.05);
+    }
+
+    .project-title {
+      font-size: 18px;
+      font-weight: 700;
+      color: var(--accent-brown);
+      margin-bottom: 4px;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+
+    .project-badge {
+      font-size: 11px;
+      font-weight: 600;
+      background: #FBF3DE;
+      color: #7A5C22;
+      border: 1px solid #EBD69B;
+      padding: 2px 8px;
+      border-radius: 6px;
+      text-transform: uppercase;
+      letter-spacing: 0.4px;
+    }
+
+    .project-repo-link {
+      font-family: 'JetBrains Mono', monospace;
+      font-size: 13px;
+      color: var(--accent-amber);
+      text-decoration: none;
+      display: inline-block;
+      margin-bottom: 12px;
+      font-weight: 500;
+    }
+
+    .project-repo-link:hover {
+      text-decoration: underline;
+    }
+
+    blockquote {
+      border-left: 3px solid var(--accent-amber);
+      padding: 6px 16px;
+      margin: 12px 0 16px 0;
+      background: #FDFBF7;
+      color: var(--text-muted);
+      font-style: italic;
+      border-radius: 0 8px 8px 0;
+    }
+
+    .sub-project {
+      background: #FAF7F2;
+      border: 1px solid var(--border-subtle);
+      border-radius: 8px;
+      padding: 16px;
+      margin-top: 14px;
+    }
+
+    .sub-project h5 {
+      font-size: 15px;
+      color: var(--accent-brown);
+      margin-bottom: 6px;
+      display: flex;
+      align-items: center;
+      gap: 6px;
+    }
+
+    .sub-project-link {
+      font-family: 'JetBrains Mono', monospace;
+      font-size: 12px;
+      color: var(--accent-amber);
+      text-decoration: none;
+      display: inline-block;
+      margin-bottom: 8px;
+    }
+
+    .sub-project-link:hover {
+      text-decoration: underline;
+    }
+
+    .learning-note {
+      font-size: 13.5px;
+      background: #F5EFE6;
+      border-left: 3px solid #8D6E4F;
+      padding: 6px 12px;
+      border-radius: 0 6px 6px 0;
+      margin-top: 8px;
+      color: #4A3C31;
+    }
+
+    .stats-container {
+      display: flex;
+      gap: 16px;
+      justify-content: center;
+      flex-wrap: wrap;
+      margin-top: 20px;
+      margin-bottom: 16px;
+    }
+
+    .stats-container img {
+      max-width: 48%;
+      min-width: 280px;
+      height: auto;
+      border-radius: 12px;
+      border: 1px solid var(--border-subtle);
+    }
+
+    .stats-disclaimer {
+      font-size: 12.5px;
+      color: var(--text-light);
+      text-align: center;
+      font-style: italic;
+      margin-top: 8px;
+    }
+
+    .checklist-item {
+      display: flex;
+      align-items: flex-start;
+      gap: 10px;
+      margin-bottom: 10px;
+      font-size: 14.5px;
+    }
+
+    .checklist-item input[type="checkbox"] {
+      margin-top: 4px;
+      accent-color: var(--accent-brown);
+    }
+
+    .connect-box {
+      text-align: center;
+      padding: 24px;
+      background: #FFFFFF;
+      border: 1px solid var(--border-subtle);
+      border-radius: 12px;
+      margin-top: 24px;
+    }
+
+    .connect-links {
+      display: flex;
+      justify-content: center;
+      gap: 16px;
+      margin-bottom: 12px;
+    }
+
+    .connect-links img {
+      height: 38px;
+      border-radius: 6px;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Top Info Toolbar -->
+  <div class="preview-header-bar">
+    <div class="preview-tag">
+      <span class="badge">Live Preview</span>
+      <span>GitHub Profile README: <strong>chimchim-codes / README.md</strong></span>
+    </div>
+    <div class="preview-actions">
+      Theme: Warm Editorial Neutrals & Butter Yellow
+    </div>
+  </div>
+
+  <div class="container">
+
+    <!-- Hero Section -->
+    <div class="banner-wrapper">
+      <img src="assets/profile-banner.svg" alt="Sharon Elsa Sam Profile Banner">
+    </div>
+
+    <div class="hero-center">
+      <div class="badges-row">
+        <a href="https://github.com/chimchim-codes" target="_blank">
+          <img src="https://img.shields.io/badge/GitHub-chimchim--codes-4A3525?style=flat-square&logo=github&logoColor=F6D06D&labelColor=222326" alt="GitHub">
+        </a>
+        <a href="https://www.linkedin.com/in/sharon-elsa-sam" target="_blank">
+          <img src="https://img.shields.io/badge/LinkedIn-sharon--elsa--sam-4A3525?style=flat-square&logo=linkedin&logoColor=F6D06D&labelColor=222326" alt="LinkedIn">
+        </a>
+        <img src="https://img.shields.io/badge/Focus-AI%20Engineering%20%26%20Data%20Science-F6D06D?style=flat-square&logoColor=222326&labelColor=4A3525&color=F6D06D" alt="Focus">
+      </div>
+
+      <h1 class="profile-name">Sharon Elsa Sam</h1>
+      <div class="profile-subtitle">Artificial Intelligence & Data Science Student · Aspiring AI Engineer</div>
+      <div class="profile-tagline">Exploring how intelligent systems work and engineering reliable, human-centered software.</div>
+    </div>
+
+    <hr>
+
+    <!-- About Me -->
+    <h3 class="section-heading">📖 About Me</h3>
+    <p>
+      I am an undergraduate student in <strong>Artificial Intelligence and Data Science</strong> focused on bridging mathematical models and production-ready software. Rather than treating artificial intelligence as a collection of black-box libraries, I am driven to understand the algorithmic foundations underneath—from linear algebra and optimization to how real-world backend services process and serve predictions.
+    </p>
+    <p>
+      My goal is to grow into an <strong>AI Engineer</strong> who can build, deploy, and maintain dependable applications that solve genuine problems.
+    </p>
+
+    <h4 class="sub-heading">💡 What I'm Curious About</h4>
+    <ul>
+      <li><strong>Machine Learning & Deep Learning</strong> — Studying loss surfaces, gradient mechanics, representation learning, and evaluation metrics that reflect real-world performance.</li>
+      <li><strong>AI Engineering & LLM Applications</strong> — Investigating how large language models interact with structured data, external tooling, APIs, and retrieval pipelines.</li>
+      <li><strong>Backend Systems & APIs</strong> — Designing clean application programming interfaces, predictable data schemas, and resilient service architectures.</li>
+      <li><strong>Data Science & Forensics</strong> — Finding authentic signal within noisy data, timeline puzzles, and structured records.</li>
+      <li><strong>Intelligent Applications & Practical Problem-Solving</strong> — Translating theoretical concepts into accessible, functional software that people can rely on.</li>
+    </ul>
+
+    <hr>
+
+    <!-- Tech Stack -->
+    <h3 class="section-heading">🛠️ Tech Stack & Tooling</h3>
+    <p>Technologies are categorized by domain. To provide an honest representation of my technical journey, tools I actively use in code are separated from concepts I am actively learning.</p>
+
+    <h4 class="sub-heading">💻 Programming Languages</h4>
+    <table>
+      <thead>
+        <tr>
+          <th width="28%">Category</th>
+          <th>Technologies</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td><strong>Actively Using</strong></td>
+          <td>
+            <img src="https://img.shields.io/badge/Python-4A3525?style=flat-square&logo=python&logoColor=F6D06D&labelColor=222326" alt="Python">
+            <img src="https://img.shields.io/badge/Java-4A3525?style=flat-square&logo=openjdk&logoColor=F6D06D&labelColor=222326" alt="Java">
+          </td>
+        </tr>
+        <tr>
+          <td><strong>Currently Learning</strong></td>
+          <td>
+            <img src="https://img.shields.io/badge/Learning-TypeScript-73533F?style=flat-square&logo=typescript&logoColor=FAF7F2&labelColor=222326" alt="TypeScript">
+            <img src="https://img.shields.io/badge/Learning-C-73533F?style=flat-square&logo=c&logoColor=FAF7F2&labelColor=222326" alt="C">
+          </td>
+        </tr>
+      </tbody>
+    </table>
+
+    <h4 class="sub-heading">🧠 AI, Machine Learning & Data Science</h4>
+    <table>
+      <thead>
+        <tr>
+          <th width="28%">Category</th>
+          <th>Technologies</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td><strong>Actively Using</strong></td>
+          <td>
+            <img src="https://img.shields.io/badge/NumPy-4A3525?style=flat-square&logo=numpy&logoColor=F6D06D&labelColor=222326" alt="NumPy">
+            <img src="https://img.shields.io/badge/Pandas-4A3525?style=flat-square&logo=pandas&logoColor=F6D06D&labelColor=222326" alt="Pandas">
+            <img src="https://img.shields.io/badge/Matplotlib-4A3525?style=flat-square&logo=python&logoColor=F6D06D&labelColor=222326" alt="Matplotlib">
+          </td>
+        </tr>
+        <tr>
+          <td><strong>Currently Learning</strong></td>
+          <td>
+            <img src="https://img.shields.io/badge/Learning-Scikit--Learn-73533F?style=flat-square&logo=scikitlearn&logoColor=FAF7F2&labelColor=222326" alt="Scikit-Learn">
+            <img src="https://img.shields.io/badge/Learning-PyTorch-73533F?style=flat-square&logo=pytorch&logoColor=FAF7F2&labelColor=222326" alt="PyTorch">
+            <img src="https://img.shields.io/badge/Learning-LLM%20Orchestration-73533F?style=flat-square&logo=openai&logoColor=FAF7F2&labelColor=222326" alt="LLM Orchestration">
+          </td>
+        </tr>
+      </tbody>
+    </table>
+
+    <h4 class="sub-heading">⚙️ Backend, Desktop & Data Management</h4>
+    <table>
+      <thead>
+        <tr>
+          <th width="28%">Category</th>
+          <th>Technologies</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td><strong>Actively Using</strong></td>
+          <td>
+            <img src="https://img.shields.io/badge/CustomTkinter-GUI-4A3525?style=flat-square&logo=python&logoColor=F6D06D&labelColor=222326" alt="CustomTkinter">
+            <img src="https://img.shields.io/badge/Tkinter-Desktop-4A3525?style=flat-square&logo=python&logoColor=F6D06D&labelColor=222326" alt="Tkinter">
+            <img src="https://img.shields.io/badge/JSON-Data%20Store-4A3525?style=flat-square&logo=json&logoColor=F6D06D&labelColor=222326" alt="JSON">
+          </td>
+        </tr>
+        <tr>
+          <td><strong>Currently Learning</strong></td>
+          <td>
+            <img src="https://img.shields.io/badge/Learning-FastAPI-73533F?style=flat-square&logo=fastapi&logoColor=FAF7F2&labelColor=222326" alt="FastAPI">
+            <img src="https://img.shields.io/badge/Learning-REST%20APIs-73533F?style=flat-square&logo=fastapi&logoColor=FAF7F2&labelColor=222326" alt="REST APIs">
+            <img src="https://img.shields.io/badge/Learning-SQLite%20%2F%20SQL-73533F?style=flat-square&logo=sqlite&logoColor=FAF7F2&labelColor=222326" alt="SQLite / SQL">
+          </td>
+        </tr>
+      </tbody>
+    </table>
+
+    <h4 class="sub-heading">🔧 Tools & Development Workflow</h4>
+    <table>
+      <thead>
+        <tr>
+          <th width="28%">Category</th>
+          <th>Technologies</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td><strong>Actively Using</strong></td>
+          <td>
+            <img src="https://img.shields.io/badge/Git-4A3525?style=flat-square&logo=git&logoColor=F6D06D&labelColor=222326" alt="Git">
+            <img src="https://img.shields.io/badge/GitHub-4A3525?style=flat-square&logo=github&logoColor=F6D06D&labelColor=222326" alt="GitHub">
+            <img src="https://img.shields.io/badge/VS%20Code-4A3525?style=flat-square&logo=visualstudiocode&logoColor=F6D06D&labelColor=222326" alt="VS Code">
+            <img src="https://img.shields.io/badge/Pillow-Image%20Processing-4A3525?style=flat-square&logo=python&logoColor=F6D06D&labelColor=222326" alt="Pillow">
+          </td>
+        </tr>
+        <tr>
+          <td><strong>Currently Learning</strong></td>
+          <td>
+            <img src="https://img.shields.io/badge/Learning-Docker-73533F?style=flat-square&logo=docker&logoColor=FAF7F2&labelColor=222326" alt="Docker">
+            <img src="https://img.shields.io/badge/Learning-Linux%20CLI-73533F?style=flat-square&logo=linux&logoColor=FAF7F2&labelColor=222326" alt="Linux CLI">
+            <img src="https://img.shields.io/badge/Learning-Branching%20%26%20PRs-73533F?style=flat-square&logo=git&logoColor=FAF7F2&labelColor=222326" alt="Git Flow">
+          </td>
+        </tr>
+      </tbody>
+    </table>
+
+    <hr>
+
+    <!-- Currently Learning -->
+    <h3 class="section-heading">🎯 Currently Learning</h3>
+    <p>These are my active growth goals. They represent areas where I am writing code, reading documentation, and building small iterations:</p>
+    
+    <div class="checklist-item">
+      <input type="checkbox" disabled>
+      <div><strong>Python & Engineering Fundamentals</strong> — Exploring idiomatic patterns, object-oriented encapsulation, error handling, and clean code principles.</div>
+    </div>
+    <div class="checklist-item">
+      <input type="checkbox" disabled>
+      <div><strong>Mathematical Machine Learning</strong> — Working through vector spaces, matrix transformations, loss functions, and optimization mathematics from first principles.</div>
+    </div>
+    <div class="checklist-item">
+      <input type="checkbox" disabled>
+      <div><strong>AI Engineering & LLM Workflows</strong> — Studying retrieval-augmented generation (RAG), prompt architecture, structured JSON outputs, and embedding spaces.</div>
+    </div>
+    <div class="checklist-item">
+      <input type="checkbox" disabled>
+      <div><strong>Backend Service Development</strong> — Understanding HTTP methods, request validation, state management, and building clean RESTful interfaces.</div>
+    </div>
+    <div class="checklist-item">
+      <input type="checkbox" disabled>
+      <div><strong>Collaborative Git & GitHub</strong> — Moving beyond simple push/pull to feature branches, descriptive commit histories, pull requests, and merge strategies.</div>
+    </div>
+    <div class="checklist-item">
+      <input type="checkbox" disabled>
+      <div><strong>Code Maintainability & Testing</strong> — Adopting type hinting, descriptive docstrings, and basic unit testing for predictable software behavior.</div>
+    </div>
+
+    <hr>
+
+    <!-- Featured Projects -->
+    <h3 class="section-heading">📂 Featured Projects</h3>
+    <p>Each project listed below reflects real, verified code built during my learning journey. Mini-exercises and full applications are distinguished honestly.</p>
+
+    <!-- Project 1 -->
+    <div class="project-card">
+      <div class="project-title">
+        🔍 1. Detective Mystery & Digital Forensics: Ramji Rao Speaking
+        <span class="project-badge">Forensics Case Study</span>
+      </div>
+      <blockquote>A digital forensics case study and desktop investigation game.</blockquote>
+      <a class="project-repo-link" href="https://github.com/chimchim-codes/RamjiRao-Speaking" target="_blank">↗ github.com/chimchim-codes/RamjiRao-Speaking</a>
+      <p><strong>Core Technologies:</strong> <code>Python 3</code> · <code>CustomTkinter</code> · <code>Pillow (PIL)</code> · <code>JSON Manifest Engine</code> · <code>Dynamic File Recovery</code></p>
+      <p><strong>What It Solves:</strong> Built around an investigation scenario (<em>Nisha's Villa</em>), this application tests analytical and deductive reasoning. Instead of an automated solver, it puts players in the detective's chair—requiring them to inspect crime scenes on an interactive map, decrypt secured records, examine timeline discrepancies, and assemble evidence on a theory board before accusing a suspect.</p>
+      <p><strong>Implemented Technical Features:</strong></p>
+      <ul>
+        <li><strong>Dynamic Case Pack Discovery:</strong> Reads locations, map markers, and evidence hierarchy dynamically from <code>case_manifest.json</code> without hardcoding content into UI views.</li>
+        <li><strong>Forensic Recovery Engine:</strong> Detects corrupted/tampered evidence files and guides the user through digital forensic restoration routines.</li>
+        <li><strong>In-Memory Hint Decryption:</strong> Protects clues using encrypted payloads (<code>hints.dat</code>), decrypting hints into memory only when requested.</li>
+        <li><strong>Case Save System:</strong> Serializes investigator notebook entries, unlocked evidence sets, and theory boards into structured JSON save files (<code>savegames/</code>).</li>
+      </ul>
+      <div class="learning-note">
+        <strong>What I Learned:</strong> Modular state separation (<code>save_manager.py</code>, <code>hint_manager.py</code>, <code>models.py</code>), desktop UI architecture with CustomTkinter, and handling complex event-driven game states.
+      </div>
+    </div>
+
+    <!-- Project 2 -->
+    <div class="project-card">
+      <div class="project-title">
+        🐍 2. Python Mini Projects: Logic & Fundamentals
+        <span class="project-badge">Verified Repository</span>
+      </div>
+      <blockquote>Small, focused applications exploring core Python concepts and GUI programming.</blockquote>
+      <a class="project-repo-link" href="https://github.com/chimchim-codes/Basic-Python-Projects" target="_blank">↗ github.com/chimchim-codes/Basic-Python-Projects</a>
+      <p>Rather than maintaining separate repositories for introductory exercises, these programs are organized together within a single repository to track progressive learning:</p>
+
+      <div class="sub-project">
+        <h5>🕹️ A. Rock, Paper, Scissors</h5>
+        <a class="sub-project-link" href="https://github.com/chimchim-codes/Basic-Python-Projects/blob/main/RockPaperScissors.py" target="_blank">📄 RockPaperScissors.py</a>
+        <p><strong>Key Concepts Practiced:</strong> User input validation, <code>random.choice()</code> selection, conditional logic branching (<code>if</code> / <code>elif</code> / <code>else</code>), round-based iteration loops, and persistent session score tracking.</p>
+        <div class="learning-note">
+          <strong>Next Improvement:</strong> Add case-insensitive input parsing (<code>.upper()</code>), defensive error handling for non-numeric round counts, and an optional probability-based computer opponent.
+        </div>
+      </div>
+
+      <div class="sub-project">
+        <h5>🔐 B. Password Generator</h5>
+        <a class="sub-project-link" href="https://github.com/chimchim-codes/Basic-Python-Projects/blob/main/passwrd_gen.py" target="_blank">📄 passwrd_gen.py</a>
+        <p><strong>How It Works:</strong> Accepts user-defined character lengths and samples characters uniformly from alphanumeric strings and punctuation sets via <code>random.sample()</code>.</p>
+        <p><strong>Security Context:</strong> <em>Transparent note</em> — Uses Python's standard <code>random</code> pseudo-random generator (Mersenne Twister), which is appropriate for basic applications but not cryptographically secure.</p>
+        <div class="learning-note">
+          <strong>Next Improvement:</strong> Refactor to Python’s built-in <code>secrets</code> module (<code>secrets.choice</code>) for cryptographically secure entropy, and add configuration flags allowing users to choose character types (uppercase, lowercase, symbols, digits).
+        </div>
+      </div>
+
+      <div class="sub-project">
+        <h5>📝 C. Desktop To-Do List</h5>
+        <a class="sub-project-link" href="https://github.com/chimchim-codes/Basic-Python-Projects/blob/main/to_dolist.py" target="_blank">📄 to_dolist.py</a>
+        <p><strong>Implemented Features:</strong> Desktop interface built with <code>customtkinter</code> and <code>tkinter.Listbox</code>. Supports text entry insertion, dynamic list updating, and deletion of selected task items.</p>
+        <p><strong>What I Learned:</strong> GUI component layout (<code>.grid()</code>), event handler callbacks (<code>add_item</code>, <code>delete_item</code>), and cross-library widget coordination.</p>
+        <div class="learning-note">
+          <strong>Next Improvement:</strong> Add local data persistence (saving tasks to a local JSON file or SQLite database so tasks persist after closing) and implement a status toggle for marking tasks completed.
+        </div>
+      </div>
+    </div>
+
+    <!-- Project 3 -->
+    <div class="project-card">
+      <div class="project-title">
+        🌐 3. Interactive Web Portfolio
+        <span class="project-badge">Web Application</span>
+      </div>
+      <blockquote>A scrapbook-inspired personal portfolio exploring motion and responsive web design.</blockquote>
+      <a class="project-repo-link" href="https://github.com/chimchim-codes/Portfolio" target="_blank">↗ github.com/chimchim-codes/Portfolio</a> · <a class="project-repo-link" href="https://portfolio-chimchim-codes.vercel.app" target="_blank">🔗 portfolio-chimchim-codes.vercel.app</a>
+      <p><strong>Technologies:</strong> <code>Next.js</code> · <code>TypeScript</code> · <code>Tailwind CSS</code> · <code>Framer Motion</code></p>
+      <p><strong>Description:</strong> Designed with tactile, scrapbook-inspired visuals to explore modern frontend patterns, component lifecycle, and web animation physics.</p>
+    </div>
+
+    <hr>
+
+    <!-- Stats -->
+    <h3 class="section-heading">📊 GitHub Activity & Overview</h3>
+    <div class="stats-container">
+      <img src="https://github-readme-stats.vercel.app/api?username=chimchim-codes&show_icons=true&bg_color=FAF7F2&title_color=4A3525&text_color=2B231D&icon_color=D4A72C&border_color=E5DCCB&border_radius=12&hide_border=false" alt="Sharon's GitHub Profile Statistics">
+      <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=chimchim-codes&layout=compact&bg_color=FAF7F2&title_color=4A3525&text_color=2B231D&border_color=E5DCCB&border_radius=12&hide_border=false" alt="Top Languages">
+    </div>
+    <div class="stats-disclaimer">
+      *Note: GitHub statistics reflect public contributions and repository languages. They represent a visual log of active coding iterations rather than an absolute measure of software engineering depth.
+    </div>
+
+    <hr>
+
+    <!-- This Week's Focus -->
+    <h3 class="section-heading">⚡ This Week's Focus</h3>
+    <div class="checklist-item">
+      <input type="checkbox" checked disabled>
+      <div>Designing a minimal, editorial GitHub profile README with custom banner assets.</div>
+    </div>
+    <div class="checklist-item">
+      <input type="checkbox" disabled>
+      <div>Refactoring <code>Basic-Python-Projects</code> with input validation, docstrings, and <code>secrets</code> module integration.</div>
+    </div>
+    <div class="checklist-item">
+      <input type="checkbox" disabled>
+      <div>Practicing feature branches, pull requests, and semantic commit conventions on GitHub.</div>
+    </div>
+    <div class="checklist-item">
+      <input type="checkbox" disabled>
+      <div>Studying mathematical vectors and matrices to prepare for machine learning model development.</div>
+    </div>
+    <div class="checklist-item">
+      <input type="checkbox" disabled>
+      <div>Maintaining a consistent, meaningful seven-day contribution streak on GitHub.</div>
+    </div>
+
+    <hr>
+
+    <!-- Connect -->
+    <div class="connect-box">
+      <h3 class="section-heading" style="justify-content: center; margin-bottom: 8px;">📬 Connect With Me</h3>
+      <p style="margin-bottom: 20px;">Open to conversations on AI engineering, machine learning foundations, open-source projects, and collaborative learning.</p>
+      <div class="connect-links">
+        <a href="https://github.com/chimchim-codes" target="_blank">
+          <img src="https://img.shields.io/badge/GitHub-chimchim--codes-4A3525?style=for-the-badge&logo=github&logoColor=F6D06D&labelColor=222326" alt="GitHub">
+        </a>
+        <a href="https://www.linkedin.com/in/sharon-elsa-sam" target="_blank">
+          <img src="https://img.shields.io/badge/LinkedIn-sharon--elsa--sam-4A3525?style=for-the-badge&logo=linkedin&logoColor=F6D06D&labelColor=222326" alt="LinkedIn">
+        </a>
+      </div>
+    </div>
+
+  </div>
+
+</body>
+</html>
