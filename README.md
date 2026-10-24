@@ -31,17 +31,26 @@
 
 ### ✦ About Me
 
-I am an **Artificial Intelligence and Data Science** undergraduate student fascinated by how intelligent systems operate beneath high-level abstractions. I believe strong AI engineering is rooted in rigorous mathematical fundamentals—linear algebra, calculus, and probability—paired with clean, dependable backend architecture.
-
-My focus is on transforming theoretical concepts into functional, real-world tools while maintaining clean code practices, clear documentation, and steady learning habits.
-
-#### Core Areas of Curiosity
-
-- **Machine Learning & Deep Learning** — Understanding gradient mechanics, loss landscape optimization, and model evaluation beyond library abstractions.
-- **AI Engineering & LLM Applications** — Investigating how generative models integrate into reliable pipelines, structured APIs, and retrieval-augmented systems.
-- **Backend Systems & APIs** — Designing clean application interfaces, structured data models, and resilient server-side workflows.
-- **Data Science & Forensics** — Finding authentic signals within complex datasets, structured records, and timeline investigations.
-- **Creative Problem-Solving & Mini-Projects** — Writing modular code, building desktop interfaces, and learning through deliberate, iterative practice.
+<table>
+  <tr>
+    <td width="32%" align="center" valign="top">
+      <img src="assets/disco-ball-transparent.png" alt="Monochrome Disco Ball Artwork" width="220">
+    </td>
+    <td width="68%" valign="top">
+      <p>I am an <strong>Artificial Intelligence and Data Science</strong> undergraduate student fascinated by how intelligent systems operate beneath high-level abstractions. I believe strong AI engineering is rooted in rigorous mathematical fundamentals—linear algebra, calculus, and probability—paired with clean, dependable backend architecture.</p>
+      <p>My focus is on transforming theoretical concepts into functional, real-world tools while maintaining clean code practices, clear documentation, and steady learning habits.</p>
+      <h4>Core Areas of Curiosity</h4>
+      <ul>
+        <li><strong>Machine Learning &amp; Deep Learning</strong> — Understanding gradient mechanics, loss landscape optimization, and model evaluation beyond library abstractions.</li>
+        <li><strong>AI Engineering &amp; LLM Applications</strong> — Investigating how generative models integrate into reliable pipelines, structured APIs, and retrieval-augmented systems.</li>
+        <li><strong>Backend Systems &amp; APIs</strong> — Designing clean application interfaces, structured data models, and resilient server-side workflows.</li>
+        <li><strong>Data Science &amp; Forensics</strong> — Finding authentic signals within complex datasets, structured records, and timeline investigations.</li>
+        <li><strong>Creative Problem-Solving &amp; Mini-Projects</strong> — Writing modular code, building desktop interfaces, and learning through deliberate, iterative practice.</li>
+      </ul>
+      <p><em>Collecting skills, not just commits.</em> ✦</p>
+    </td>
+  </tr>
+</table>
 
 ---
 
