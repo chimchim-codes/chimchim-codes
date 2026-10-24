@@ -208,6 +208,71 @@
       color: var(--text-primary);
     }
 
+
+    .about-layout {
+      display: grid;
+      grid-template-columns: minmax(220px, 34%) minmax(0, 1fr);
+      gap: 28px;
+      align-items: start;
+    }
+
+    .about-copy {
+      min-width: 0;
+      max-width: 100%;
+    }
+
+    .about-copy p {
+      font-size: 14px;
+      line-height: 1.6;
+      margin-bottom: 10px;
+    }
+
+    .about-copy .sub-section-header {
+      margin-top: 14px;
+      margin-bottom: 8px;
+    }
+
+    .about-copy ul {
+      margin-bottom: 10px;
+    }
+
+    .about-signoff {
+      color: var(--text-muted);
+      letter-spacing: 0.2px;
+    }
+
+    .about-art {
+      display: flex;
+      justify-content: center;
+      align-items: flex-start;
+      padding-top: 8px;
+    }
+
+    .about-art img {
+      display: block;
+      width: 100%;
+      max-width: 280px;
+      height: auto;
+      object-fit: contain;
+      filter: drop-shadow(0 8px 24px rgba(255, 255, 255, 0.08));
+    }
+
+    @media (max-width: 640px) {
+      .about-layout {
+        grid-template-columns: 1fr;
+        gap: 18px;
+      }
+
+      .about-art {
+        grid-row: 1;
+        justify-content: center;
+      }
+
+      .about-art img {
+        max-width: 190px;
+      }
+    }
+
     .connect-container {
       text-align: center;
       padding: 16px;
@@ -436,21 +501,22 @@
 
     <!-- About Me -->
     <h3 class="section-header">✦ About Me</h3>
-    <p>
-      I am an <strong>Artificial Intelligence and Data Science</strong> undergraduate student fascinated by how intelligent systems operate beneath high-level abstractions. I believe strong AI engineering is rooted in rigorous mathematical fundamentals—linear algebra, calculus, and probability—paired with clean, dependable backend architecture.
-    </p>
-    <p>
-      My focus is on transforming theoretical concepts into functional, real-world tools while maintaining clean code practices, clear documentation, and steady learning habits.
-    </p>
-
-    <h4 class="sub-section-header">Core Areas of Curiosity</h4>
-    <ul>
-      <li><strong>Machine Learning & Deep Learning</strong> — Understanding gradient mechanics, loss landscape optimization, and model evaluation beyond library abstractions.</li>
-      <li><strong>AI Engineering & LLM Applications</strong> — Investigating how generative models integrate into reliable pipelines, structured APIs, and retrieval-augmented systems.</li>
-      <li><strong>Backend Systems & APIs</strong> — Designing clean application interfaces, structured data models, and resilient server-side workflows.</li>
-      <li><strong>Data Science & Forensics</strong> — Finding authentic signals within complex datasets, structured records, and timeline investigations.</li>
-      <li><strong>Creative Problem-Solving & Mini-Projects</strong> — Writing modular code, building desktop interfaces, and learning through deliberate, iterative practice.</li>
-    </ul>
+    <div class="about-layout">
+      <div class="about-art">
+        <img src="assets/disco-ball-transparent.png" alt="Monochrome disco ball artwork">
+      </div>
+      <div class="about-copy">
+        <p>AI &amp; Data Science student, curious about how things work beneath the surface—and what I can build with that knowledge.</p>
+        <p>I learn by experimenting, breaking things, and turning small ideas into working projects.</p>
+        <h4 class="sub-section-header">Currently curious about</h4>
+        <ul>
+          <li><strong>AI &amp; ML</strong> — making models make sense.</li>
+          <li><strong>Backend</strong> — APIs, logic, and systems that hold up.</li>
+          <li><strong>Data &amp; forensics</strong> — finding stories hidden in details.</li>
+        </ul>
+        <p class="about-signoff"><em>Collecting skills, not just commits.</em> ✦</p>
+      </div>
+    </div>
 
     <hr>
 
