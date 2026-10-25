@@ -20,8 +20,7 @@
 <p align="center">
   <img src="https://img.shields.io/badge/Status-Undergraduate%20%40%20AI%20%26%20Data%20Science-0D1117?style=flat-square&logoColor=F0F6FC&labelColor=161B22" alt="Status">
   &nbsp;
-  <img src="https://img.shields.io/badge/Aesthetic-Monochrome%20Editorial-0D1117?style=flat-square&logoColor=F0F6FC&labelColor=161B22" alt="Aesthetic">
-  &nbsp;
+ 
   <img src="https://img.shields.io/badge/Focus-Machine%20Learning%20%26%20Backend-0D1117?style=flat-square&logoColor=F0F6FC&labelColor=161B22" alt="Focus">
 </p>
 
