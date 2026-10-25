@@ -5,8 +5,6 @@
 
 <br><br>
 
-<br><br>
-
 # SHARON ELSA SAM
 
 **AI &amp; Data Science Student &nbsp;✦&nbsp; Aspiring AI Engineer**  
