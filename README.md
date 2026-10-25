@@ -5,9 +5,6 @@
 
 <br><br>
 
-<!-- Central Disco Ball Artwork -->
-<img src="assets/disco-ball-transparent.png" alt="Monochrome Disco Ball Artwork" width="130">
-
 <br><br>
 
 # SHARON ELSA SAM
